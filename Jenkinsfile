@@ -53,7 +53,7 @@ agent any
 
                 steps {
 
-                    nexusPublisher nexusInstanceId: 'nexus_localhost', nexusRepositoryId: 'maven-snapshots', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/*.jar']], mavenCoordinate: [artifactId: 'calculatrice', groupId: 'fr.mlamlu', packaging: 'jar', version: '1.0-SNAPSHOT']]]
+                    nexusPublisher nexusInstanceId: 'nexus_localhost', nexusRepositoryId: 'maven-snapshots', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/calculatrice-1.0-SNAPSHOT-jar-with-dependencies.jar']], mavenCoordinate: [artifactId: 'calculatrice', groupId: 'fr.mlamlu', packaging: 'jar', version: '1.0-SNAPSHOT']]]
 
                     }
             }
